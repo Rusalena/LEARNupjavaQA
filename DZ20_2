@@ -1,0 +1,8 @@
+class ColorSpeed {
+    int G;
+    int R;
+    InColorSpeed ic = new InColorSpeed();
+    class InColorSpeed  {}
+        int isRedLight;
+        int isGreenLight;
+        int SpeedOfPlayer;
