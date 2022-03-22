@@ -1,0 +1,14 @@
+public class MainDZ20 {
+    public static void main(String[] args) {
+        ColorSpeed oc = new ColorSpeed();
+        int GreenPlayer;
+        int Red;
+        ColorSpeed.InColorSpeed ic = oc.new InColorSpeed();
+        boolean Speed = false;
+        oc.SpeedOfPlayer = 5;
+        GreenPlayer = oc.SpeedOfPlayer;
+        if (GreenPlayer > 0) {
+        System.out.println("Игрок выбыл:" + GreenPlayer);
+        }
+    }
+}
