@@ -1,0 +1,26 @@
+public class StaticDZ19 {
+    public static void main(String[] args) {
+        String[] arrNames = {"Hari", "Dev", "Alina"};
+        String[] arrSpeed = sortNames(arrNames);
+        System.out.println("Имена выживших игроков:");
+
+        for (String names : arrSpeed)
+            System.out.println(names);
+    }
+
+    public static String[] sortNames(String[] arrNames) {
+        String temp;
+        int len = arrNames.length;
+
+        for (int i = 0; i < len - 1; i++) {
+            for (int j = i + 1; j < len; j++) {
+                if (arrNames[i].compareTo(arrNames[j]) > 0) {
+                    temp = arrNames[i];
+                    arrNames[i] = arrNames[j];
+                    arrNames[j] = temp;
+                }
+            }
+        }
+        return arrNames;
+    }
+}
